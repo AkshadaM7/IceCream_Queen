@@ -103,7 +103,7 @@ $value=0;
 @foreach($cart as $cart)
 <tr>
 <td>{{$cart->product->title}}</td>
-<td>${{$cart->product->price}}</td>
+<td>Rs {{$cart->product->price}}</td>
 <td><img height="120px" width="120px" src="/products/{{$cart->product->image}}"></td>
 <td><a class="btn btn-danger" onClick="confirmation(event)" href="{{url('delete_cart',$cart->id)}}"> Remove  </a></td>
 
@@ -117,7 +117,7 @@ $value=$value + $cart->product->price;
 </div></div>
 
 <div class='cart_value'>
-<h3>Total value of cart is: ${{$value}}</h3>
+<h3>Total value of cart is: Rs {{$value}}</h3>
 
 </div>
 

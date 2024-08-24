@@ -37,7 +37,7 @@
       </div>
       <div class="row">
     
-        <div class="col-md-10">
+        <div class="col-md-12">
           <div class="box">
             
               <div class="div_center">
@@ -47,14 +47,14 @@
               <div class="detail-box">
                 <h6>{{$data->title}}</h6>
                 <h6>Price
-                  <span>${{$data->price}}</span>
+                  <span>Rs {{$data->price}}</span>
                 </h6>
               </div>
 
               <div class="detail-box">
                 <h6>Category:  {{$data->category}}</h6>
                 <h6>Available Quantity
-                  <span>${{$data->quantity}}</span>
+                  <span>{{$data->quantity}}</span>
                 </h6>
               </div>
               <div class="detail-box">

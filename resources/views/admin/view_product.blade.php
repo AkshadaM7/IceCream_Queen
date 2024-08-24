@@ -25,6 +25,7 @@
             margin-top: 50px;
             width: 500px;
         }
+       
         th{
 background-color: skyblue;
 padding: 15px;
@@ -38,6 +39,11 @@ color: white;
     padding: 15px;
     color: white;
     border: 1px solid skyblue;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
     </style>
   </head>
@@ -70,27 +76,28 @@ color: white;
             <th>Delete</th>
         </tr>
         @foreach($product as $products)
-        <tr>
-            <td>{{$products->title}}</td>
-            <td>{!!Str::limit($products->description,50)!!}</td>
-            <td>{{$products->category}}</td>
-            <td>{{$products->price}}</td>
-            <td>{{$products->quantity}}</td>
-            <td>
-                <img height="120px" width="120px" src="products/{{$products->image}}">
-            </td><td><a class="btn btn-success" href="{{url('update_product',$products->id)}}">Edit </a></td>
-            <td><a class="btn btn-danger" onClick="confirmation(event)" href="{{url('delete_product',$products->id)}}"> Delete  </a></td>
-        <tr>
-    
-        @endforeach
-         <!-- Pagination Links -->
-      </div>
-         <div class="pagination">
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                        <tr>
+                            <td>{{$products->title}}</td>
+                            <td>{!!Str::limit($products->description,50)!!}</td>
+                            <td>{{$products->category}}</td>
+                            <td>{{$products->price}}</td>
+                            <td>{{$products->quantity}}</td>
+                            <td>
+                                <img height="120px" width="120px" src="products/{{$products->image}}">
+                            </td>
+                            <td><a class="btn btn-success" href="{{url('update_product',$products->id)}}">Edit</a></td>
+                            <td><a class="btn btn-danger" onClick="confirmation(event)" href="{{url('delete_product',$products->id)}}">Delete</a></td>
+                        </tr>
+                        @endforeach
+                    </table>
+                </div>
 
+                <!-- Pagination Links -->
+                <div class="pagination">
                     {{ $product->onEachSide(1)->links() }}
                 </div>
-      </div>
+            </div>
+        </div>
     </div>
     <!-- JavaScript files-->
      <!-- Latest compiled and minified CSS -->

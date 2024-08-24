@@ -20,7 +20,7 @@
                 <h6>
                   Price
                   <span>
-                    ${{$products->price}}
+                    Rs {{$products->price}}
                   </span>
                 </h6>
               </div>

@@ -17,37 +17,17 @@
       </div>
     </div>
     <div class="info_container ">
-      <div class="container">
+      <div class="container" style="text-align: justify;">
         <div class="row">
           <div class="col-md-6 col-lg-3">
             <h6>
               ABOUT US
             </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-            </p>
+            Founded on October 10, 2020, by Ms. Aakanksha Bapat, IceCream Queen is dedicated to offering a healthier and superior ice cream experience. The company crafts a diverse range of flavors using only the finest natural ingredients, ensuring each product is free from added sugar, synthetic colors, artificial flavors, preservatives, and synthetic additives. IceCream Queen consistently delivers a pure and delicious treat, meeting the demand for indulgent yet guilt-free desserts.            </p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_form ">
-              <h5>
-                Newsletter
-              </h5>
-              <form action="#">
-                <input type="email" placeholder="Enter your email">
-                <button>
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h6>
-              NEED HELP
-            </h6>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-            </p>
-          </div>
+            
+          
           <div class="col-md-6 col-lg-3">
             <h6>
               CONTACT US
@@ -55,7 +35,7 @@
             <div class="info_link-box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span> Gb road 123 london Uk </span>
+                <span> 502, Amey cooperative housing society, Jayprakash Nagar, Goregaon East, Mumbai 400063 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
@@ -63,7 +43,7 @@
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span> demo@gmail.com</span>
+                <span>icecreamqueen.1020@gmail.com</span>
               </a>
             </div>
           </div>
