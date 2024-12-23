@@ -68,18 +68,18 @@ middleware(['auth', 'verified']);
 Route::get('delete_cart/{id}',[HomeController::class,'delete_cart'])->
 middleware(['auth', 'verified']);
 
-Route::post('confirm_order/{id}',[HomeController::class,'confirm_order'])->
+Route::post('confirm_order',[HomeController::class,'confirm_order'])->name("confirm_order")->
 middleware(['auth', 'verified']);
 
 Route::get('view_orders',[AdminController::class,'view_orders'])->
 middleware(['auth','admin']);
 
-Route::get('on_the_way/{id}',[AdminController::class,'view_orders'])->
+Route::get('on_the_way/{id}',[AdminController::class,'on_the_way'])->name("on_the_way")->
 middleware(['auth','admin']);
 
-Route::get('delivered',[AdminController::class,'delivered'])->
+Route::get('delivered/{id}',[AdminController::class,'delivered'])->name("delivered")->
 middleware(['auth','admin']);
 
-Route::get('print_pdf',[AdminController::class,'print_pdf'])->
+Route::get('print_pdf/{id}',[AdminController::class,'print_pdf'])->name("print_pdf")->
 middleware(['auth','admin']);
 

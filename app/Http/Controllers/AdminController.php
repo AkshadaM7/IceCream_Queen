@@ -139,21 +139,21 @@ class AdminController extends Controller
 public function on_the_way($id)
 {
     $data=Order::find($id);
-    $data->statsu='On the way';
+    $data->status='On the way';
     $data->save();
     return redirect('/view_orders');
 }
 public function delivered($id)
 {
     $data=Order::find($id);
-    $data->statsu='Delivered';
+    $data->status='Delivered';
     $data->save();
-    return redirect('/delivered');
+    return redirect('/view_orders');
 }
 public function print_pdf($id)
 {
     $data=Order::find($id);
-    $data->statsu='Delivered';
+    $data->status='Delivered';
     $data->save();
     return redirect('/delivered');
 }

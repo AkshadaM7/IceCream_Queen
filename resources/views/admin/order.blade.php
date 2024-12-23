@@ -30,7 +30,7 @@
         }
         td {
             padding: 15px;
-            color: white;
+            color: black;
             border: 1px solid skyblue;
             background-color: white;
         }
@@ -50,10 +50,10 @@
                 <th>Address</th>
                 <th>Phone</th>
                 <th>Product Title</th>
-                <th>Price</th>
+                {{-- <th>Price</th> --}}
                 <th>Image</th>
                 <th>Status</th>
-                <th>Change Status</th>
+                <th colspan="2">Change Status</th>
               </tr>
               @foreach($data as $data)
               <tr>
@@ -61,16 +61,16 @@
                 <td>{{$data->rec_address}}</td>
                 <td>{{$data->phone}}</td>
                 <td>{{$data->product->title}}</td>
-                <td>{{$data->price}}</td>
+                {{-- <td>{{$data->price}}</td> --}}
                 <td>
                 <img height="120px" width="120px" src="products/{{$data->product->image}}">
             </td>
             <td>{{$data->status}}</td>
           
-            <td><a class="btn btn-primary" href="{{url('on_the_way',)}}">On the way</a></td>
+            <td><a class="btn btn-primary" href="{{route('on_the_way',$data->id)}}">On the way</a></td>
         
-            <td><a class="btn btn-success" href="{{url('delivered',)}}">Delivered</a></td>
-            <td><a class="btn btn-secondary" href="{{url('print_pdf',)}}">Print PDF</a></td></tr>
+            <td><a class="btn btn-success" href="{{route('delivered',$data->id)}}">Delivered</a></td>
+            {{-- <td><a class="btn btn-secondary" href="{{route('print_pdf',$data->id)}}" >Print PDF</a></td></tr> --}}
 
           </tr>
 
