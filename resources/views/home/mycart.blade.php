@@ -65,14 +65,14 @@ padding: 15px;
 <div class="div_deg">
     <div class='order_deg'>
         <form action="{{url('confirm_order')}}" method="Post">
-        <div>
+        @csrf <div>
     <label>Receiver Name</label>
     <input type="text" name="name" value="{{Auth::user()->name}}">
     </div>
 
     <div>
     <label>Receiver Address</label>
-    <textarea name="address" value="">{{Auth::user()->address}}</textarea>
+    <textarea name="address" value="{{Auth::user()->address}}"></textarea>
     </div>
 
     <div>
